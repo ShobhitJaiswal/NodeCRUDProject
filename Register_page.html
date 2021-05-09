@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<link rel="stylesheet"  href="/style.css"> 
+<link rel="stylesheet"  href="/responsive.css">   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- jQuery Modal --> 
+ <body>
+<h3>TELEX</h3>
+<form  action="data" class="formreg" method = "POST">
+  <div class="container">
+    <h2>Register Here</h2>
+    <p> </p>
+    <hr>
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+	
+	 <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+	
+	 <label for="tel"><b>Mobile no</b></label><br>
+	<input type="tel" placeholder="Enter Mobile No" name="mobile" maxlength="11" /><br>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" id="txtPassword" placeholder="Enter Password" name="password" required>
+
+    <label for="psw-repeat"><b>Confirm Password</b></label>
+    <input type="password" id="txtConfirmPassword" placeholder="Repeat Password" name="confirm_password" required>
+
+    <p>By creating an account you agree to our <a href="#">Terms & Conditions</a>.</p>
+	<div class="regbtn">
+    <a href="Login_page"><button type="submit" class="registerbtn" id="btnSubmit">Register</button> </a>
+    </div>
+    <div class="container signin">
+    <p>Already have an account? <a href="Login_page" rel="modal:open">Sign in</a></p>
+  </div>
+</form>
+</div>
+ <div class="footer">
+<div class="icons-wrapper">
+<ul class="list-item">
+<li><a href="#">About Us</a></li>
+<li><a href="#">Advertise With US</a></li>
+<li><a href="#">Terms and Conditions</a></li>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="company-wrapper clearfix">
+<span class="company">Powered By NextLay Solutions Pvt Ltd</span>
+<span class="icons clearfix">
+<a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+<a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+<a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+<a href="#"><i class="fa fa-youtube fa-2x"></i></a>
+</span>
+</div>
+<span class="copyright">Copyright &copy 2019 All Reserved Rights</span>
+</div>
+<style>
+.formreg input[type=text], input[type=password] {  /*it is used for form input */
+  width: 100%;
+  max-width:553px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=tel]{
+ width: 100%;
+  max-width:553px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+h3{
+text-align:center;
+font-size:51px;
+}
+h2{
+font-size:45px;
+text-align:center;
+color:black;
+}
+form{                                                                 /*form is used for form in center and */
+width:100%;
+max-width:40%;
+margin:0 auto;
+}
+input[type=text]:focus, input[type=password]:focus ,input[type=tel]{                      
+  background-color: #ddd;
+  outline: none;
+}
+hr {                                                 /*it is used for horizontal line*/
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.registerbtn {                                  /*it is used for button*/
+     background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0%;
+    border: none;
+    cursor: pointer;
+	border:1px solid black;
+    width: 24%;
+margin-bottom:38px;
+    font-size: 20px;
+}
+.regbtn{                                              /*it is used for button wrapper*/
+text-align: center;
+}
+.signin {
+  text-align: center;
+}
+@media only screen and (max-width :1024px) {
+h3{
+font-size:45px;
+}
+h2{
+font-size:43px;
+}
+.registerbtn {                                  /*it is used for button*/
+    width: 30%;
+}
+}
+ @media only screen and (max-width :900px) {
+
+h3{
+font-size:30px;
+}
+h2{
+font-size:29px;
+}
+.registerbtn {                                  /*it is used for button*/
+    width: 45%;
+} }
+ @media only screen and (max-width :500px) {
+ .formreg input[type=text], input[type=password]{
+ text-align:center
+ }
+h3{
+font-size:28px;
+}
+h2{
+font-size:26px;
+}
+.registerbtn {                                  /*it is used for button*/
+    width:87%;
+} 
+ }
+</style>
+<script type="text/javascript">
+    $(function () {
+        $("#btnSubmit").click(function () {
+            var password = $("#txtPassword").val();
+            var confirmPassword = $("#txtConfirmPassword").val();
+            if (password != confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+            return true;
+        });
+    });
+</script>
+</head>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "testproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "node-mysql": "^0.4.2",
+    "node-sessionstorage": "^1.0.0",
+    "sessionstorage": "^0.1.0",
+    "socket.io": "^2.2.0"
+  }
+}

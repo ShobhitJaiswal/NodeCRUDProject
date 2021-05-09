@@ -1,0 +1,515 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Welcome to my website</title>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <!--CSS Reset-->
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Google Fonts-->
+    <!--favicon-->
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+    <div id="page-wrapper" style="margin-top:150px">
+    <div id="main-content">
+
+    <!--content-->
+    <div id="content-wrapper">
+        <!--demo-->
+        <div class="container" id="demo-wrapper">
+
+            <div class="row">
+                <div class="col-md-7">
+                    <button type="button" class="btn btn-primary" id="crossover-btn-add-all">Add All</button>
+                </div>
+                <div class="col-md-5">
+                    <button type="button" class="btn btn-primary" id="crossover-btn-remove-all">Remove All</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="items">Items</label>
+                    <select multiple class="form-control crossover-box" id="items"></select>
+                </div>
+
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-primary crossover-btn" id="crossover-btn-add">Add</button>
+                    <button type="button" class="btn btn-primary crossover-btn" id="crossover-btn-remove">Remove</button>
+                </div>
+
+                <div class="col-md-5">
+                    <label for="selected">Selected Items</label>
+                    <select multiple class="form-control crossover-box" id="selected"></select>
+                </div>
+            </div>
+
+            <div class="row" id="new-item-row">
+                <div class="col-md-4">
+                    <label for="new-item">New Item</label>
+                    <input type="text" class="form-control" id="new-item-input">
+                </div>
+
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-primary" id="add-new-item-btn">Add</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <button type="button" class="btn btn-primary" id="reset-btn">Reset Demo</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!--docs-->
+
+    </div>
+
+    </div>
+    </div>
+<!--jQuery-->
+<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+<!--Bootstrap stack-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!--Custom JS-->
+<script type="text/javascript" src="js/crossover.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+<style>
+/*
+/////////////////////////////////////////////
+///////////GLOBAL STYLES/////////////////////
+///////////////////////////////////////////
+*/
+.hidden {
+    display: none;
+}
+
+.btn-primary {
+    background-color: #5A53EA !important; 
+}
+
+.btn-primary:hover {
+    background-color: rgb(41, 31, 236) !important;
+}
+
+body {
+    background-color: white;
+}
+
+/*
+/////////////////////////////////////////////
+////////////////NAVBAR STYLES///////////////
+///////////////////////////////////////////
+*/
+nav {
+    background-color: #B4B1EE;
+    height: 65px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-brand {
+    color: black !important;
+    font-size: 35px;
+}
+
+.nav-link {
+    color: rgba(0, 0, 0, 0.61) !important;
+}
+
+.nav-link:hover {
+    color: black !important;
+}
+
+.active-link {
+    color: black !important;
+}
+
+nav.scrolled {
+    background-color: #5A53EA;
+    height: 75px;
+}
+
+.navbar-brand.scrolled {
+    color: #F4F5F4 !important;
+}
+
+.nav-link.scrolled {
+    color: rgba(255, 255, 255, 0.548) !important;
+}
+
+.nav-link.scrolled:hover {
+    color: white !important;
+}
+
+.active-link.scrolled {
+    color: white !important;
+}
+
+/*
+/////////////////////////////////////////////
+/////////////CONTENT STYLES/////////////////
+///////////////////////////////////////////
+*/
+#content-wrapper {
+    margin-top: 55px;
+}
+
+hr {
+    border: .5px solid #B4B1EE;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+
+/*
+/////////////////////////////////////////////
+////////////////HOME STYLES/////////////////
+///////////////////////////////////////////
+*/
+.jumbotron {
+    background-color: #B4B1EE;
+    height: 600px;
+}
+
+#home-content {
+    color: #F4F4EE;
+    text-align: center;
+    margin-top: 3%;
+}
+
+#jquery-logo {
+    height: 30%;
+    margin-top: 1%;
+    width: 30%;
+}
+
+.lead {
+    margin-bottom: 0;
+}
+
+/*
+/////////////////////////////////////////////
+////////////////DEMO STYLES/////////////////
+///////////////////////////////////////////
+*/
+#demo-wrapper {
+    color: #5A53EA;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.crossover-box {
+    color: #5A53EA;
+    height: 300px !important;
+}
+
+.crossover-btn {
+    margin-left: 15%;
+    width: 100px;
+}
+
+#crossover-btn-add {
+    margin-bottom: 5%;
+    margin-top: 80%;
+}
+
+.row {
+    margin-top: 1rem;
+}
+
+#add-new-item-btn {
+    margin-top: 20%;
+    width: 100px;
+}
+
+/*
+/////////////////////////////////////////////
+////////////////CODE STYLES/////////////////
+///////////////////////////////////////////
+*/
+
+#code-wrapper {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+
+}
+.card-header {
+    background-color: #083568;
+    color: white;
+}
+
+.card-img {
+    height: 100%;
+    width: 100%;
+}
+
+.card-text {
+    margin-top: 5px;
+}
+
+/*
+/////////////////////////////////////////////
+//////////////FOOTER STYLES/////////////////
+///////////////////////////////////////////
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+#page-wrapper {
+    min-height: 100%;
+}
+
+#main-content {
+    overflow: auto;
+    padding-bottom: 200px;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+ @media only screen and (max-width :500px) {
+ 
+ }}
+</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+function crossover() {
+///////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////CROSSOVER FUNCTIONALITY///////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+    var Data = ['Chaperone', 'Jade Rabbit', 'Wardcliff Coil',
+                'Tractor Cannon', 'Sweet Business', 'Thorn',
+                'Graviton Lance', 'Wavesplitter', 'Telesto',
+                'Black Splindle', 'Polaris Lance', 'Ace of Spades'];
+
+    populateItems(Data, '#items');
+
+    //add btn
+    $('#crossover-btn-add').click(function() {
+        var selected = $('select#items').val();
+        $('#items option:selected').remove();
+        generateOptionElements(selected, '#selected');
+    });
+    
+    //remove btn
+    $('#crossover-btn-remove').click(function() {
+        var selected = $('select#selected').val();
+        $('#selected option:selected').remove();
+        $('#items option').each(function() {
+            selected.push($(this).val());
+        });
+    
+        $('#items option').remove();
+        selected.sort();
+    
+        generateOptionElements(selected, '#items');
+    });
+
+    //add all btn
+    $('#crossover-btn-add-all').click(function() {
+        var selected = [];
+        $('#items option').each(function() {
+            selected.push($(this).val());
+        });
+
+        $('#items option').remove();
+        
+        generateOptionElements(selected, '#selected');
+    });
+
+    //remove all btn
+    $('#crossover-btn-remove-all').click(function() {
+        var selected = [];
+        $('#items option').each(function() {
+            selected.push($(this).val());
+        });
+
+        $('#selected option').each(function() {
+            selected.push($(this).val());
+        });
+        
+        $('#items option').remove();
+        $('#selected option').remove();
+        selected.sort();
+
+        generateOptionElements(selected, '#items');
+    });
+    
+    //populate items box with arr
+    function populateItems(arr, targetMultiSelect) {
+        arr.sort();
+        generateOptionElements(arr, targetMultiSelect);
+    }
+    
+    //temporarily add a new item to the crossover
+    $('#add-new-item-btn').click(function() {
+        if ($('#new-item-input').val() !== '') {
+            var selected = [];
+            selected.push($('#new-item-input').val().trim());
+    
+            $('#selected option').each(function() {
+                selected.push($(this).val()); 
+            });
+    
+            selected.sort();
+            $('#selected').empty();
+    
+            generateOptionElements(selected, '#selected');
+    
+            $('#new-item-input').val('');
+        }
+    });
+    
+    //reset demo
+    $('#reset-btn').click(function() {
+        $('#items').empty();
+        $('#selected').empty();
+        populateItems(Data, '#items');
+    });
+    
+    
+///////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////MINI FUNCTIONS TO AVOID REPEAT CODE///////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+        
+//create option elements
+function generateOptionElements(arr, targetMultiSelect) {
+    for (var i = 0; i < arr.length; i++) {
+        var option = document.createElement('OPTION');
+        var text = document.createTextNode(arr[i]);
+        option.appendChild(text);
+        $(targetMultiSelect).append(option);
+    }
+}
+};
+///////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////EXECUTION OF JS///////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+$(function() {
+
+    crossover();
+
+///////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////NAVBAR ANIMATION//////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll > 65) {
+            $('nav, .navbar-brand, .nav-link, .active-link').addClass('scrolled');
+        } else {
+            $('nav, .navbar-brand, .nav-link, .active-link').removeClass('scrolled');
+        }
+    });
+
+///////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////NAVBAR SCROLL/////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+    $('.nav-link').click(function() {
+        $('.active-link').removeClass('active-link');
+        $(this).addClass('active-link');
+
+        $('html, body').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 900, function() {
+            window.location.hash = this.hash;
+        });
+    });
+
+});
+</script>
+</html>

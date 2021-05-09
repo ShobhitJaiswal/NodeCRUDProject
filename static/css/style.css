@@ -1,0 +1,265 @@
+
+.contentorders{                                      /*contentorders is the wrapper for the -*/
+margin-bottom:570px;
+}      
+.ordersitmes.open{
+display:block;
+}
+.hamburger{
+display:none;
+}
+ /* HEADER   START */
+ body{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ /*overflow-y: hidden;  hide only the vertical scrollbar, use overflow-y*/
+  overflow-x: hidden;  /* hide only the horizontal scrollbar, use overflow-x*/
+ }
+ .container{                                                   /*used for in all pages for content in the center*/
+width:100%;
+max-width:1400px;     
+margin:0 auto;
+padding:0 15px;
+}													 
+.header{                                                          /*it is used padding and color in header*/
+padding: 20px 0px;
+background-color: powderblue;     
+padding-bottom:4px;
+margin-bottom:-150px;
+}
+.home{                                                           /*it is used in header to left side on header*/
+padding-top:19px;
+float:left;
+font-size:22px;
+}
+.home a{
+color:black;
+text-decoration:none;
+}
+.listplace{                                               /*it is the list in header*/
+float:left;
+padding: 0px 15px;
+font-size: 22px;
+list-style-type: none;
+text-decoration:none;
+margin-right:1%;
+margin-left:10%;
+}
+.listplace a{                                               /*a tag is used for color in the list for text*/   
+float:left;
+text-decoration:none;
+color:black;
+}
+.list-itemplace{                                         /*it is a wrapper class used for list in header*/
+margin-bottom:-13px;
+}
+h1{
+font-size:51px;                             
+float:left;
+margin-left:10%;
+margin-right:10%;
+}
+.dropdown ul {                                 /*it is used for wrapper for the menu in contentpage*/
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+.dropdown li a {                                   /*it is used for menu list*/    
+  color:white;
+}
+
+.dropdown-container a{                             /*it is used for sub-menu wrapper*/
+color:white;
+}
+.dropdown li ul{                                    /*it is used for menu list*/
+right:0;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 60rem;
+    position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1.5rem;
+    left:100px;
+  display: none;
+  float:left;
+}
+.dropdown-container li ul{                            /*it is used for sub-menu*/  
+right:0;
+  visibility: hidden;
+  opacity: 0;
+  min-width:60rem;           
+    position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1.5rem;                                /*53rem is unit like px it is min-width*/
+    left:100px;
+	float:left;
+  display: none;
+  /*it is used here because when we click or hover then show the list otherwise not */
+}
+.dropdown li:hover {                                       
+    background-color:#E7D3A4;
+    cursor: pointer;
+	color:black;
+	text-align : center;
+	float:none;
+}
+.dropdown a:hover{
+color:black;
+}
+.dropdown-container li:hover{                                   
+ background-color:#E7D3A4;
+    cursor: pointer;
+	color:black;
+}
+.dropdown-container a:hover{
+color:black;
+}
+.drop1 li:hover{
+ background-color:#CFBB95;
+    cursor: pointer;
+	float:left;
+	text-align:center;
+}
+.dropdown-container li a{
+color:white;
+}
+ul li ul {
+    visibility: hidden;                                      /*it is used here because when we click or hover then show the list otherwise not */
+  opacity: 0;
+  min-width:63rem;
+    position: absolute;
+  transition: all 0.5s ease;            
+  margin-top:18px;
+    left:13px;
+  display: none;
+}
+.clearfix::after {                /*it is used beacause with float property we have to use clearfix property */
+  content: "";
+  clear: both;
+  display: table;
+}
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;                            /*it is used for to display the list */
+}
+
+ul li ul li {
+    clear: both;
+  width: 100%;
+}
+input[type=text], input[type=password] {                    /*it is used for input text in the headers section welcome then inputfield*/   
+  width: 100%;
+  max-width:120px;
+  padding:8px;
+  margin: 5px 0 22px 0;
+  background-color:powderblue;
+  border:none;
+}
+.contentorders{                                                    /*it is wrapper for all menu*/              
+margin-bottom:570px;
+position:relative;
+}
+.ordersitmes li{                                    /*it is for main menu li */
+float:left;
+position:relative;
+list-style-type:none;
+border: 2px solid black;
+background-color:green;
+width: 100%;
+padding:1rem;
+max-width:20%;
+border-radius: 46%;
+text-align: center;
+display:block;
+}
+.ordersitmes{                                             /*it is used for main menu wrapper to adjust in center */
+text-align:center;
+margin-right:-110px;
+margin-bottom:150px;
+}
+.ordersitmes a{                                               /*it is used for main-menu to adjust the button for color and padding from all sides */
+font-size:24px;
+color:white;
+padding:25px 10px;
+list-style-type:none;
+text-decoration: none;
+}
+.order a{
+
+font-size:24px;
+color:white;
+padding:25px 10px;
+list-style-type:none;
+text-decoration: none;
+}
+.ordersitmes a{                                               /*it is used for main-menu to adjust the button for color and padding from all sides */
+font-size:24px;
+color:white;
+padding:25px -11px;
+list-style-type:none;
+text-decoration: none;
+}
+.sell{                                                               /*it is used for sub menu to adjust the button from right and bottom */
+right:-9.95%;
+bottom: 69px;
+}
+.sells{                                                               /*it is used for sub menu to adjust the button from right and bottom */
+right:-10%;
+bottom: 71px;
+}	
+.ordersitmes{
+	display:block;
+}
+/* HEADER END*/
+ /* FOOTER START*/
+
+.fa-2x {                                                   
+    font-size: 2em;                                /*2em is unit like px it is font size for icon*/
+    margin-left: 20px;
+}
+.list-item {                                          /*list in the footer*/    
+	display:flex;
+	list-style-type:none;
+	 justify-content:center;
+	 padding-bottom:25px;
+	 color:black;
+	 margin-right:105px;
+}
+.icons{                           /*icons in the footer section */                          
+float:right;
+margin-right: 154px;
+margin-top: -29px;
+display:block;
+}
+.list-item a{                          /* <a> tag is used for to change the color of text*/
+	margin-left:25px;
+	color:black;
+}
+.company{
+   text-align:center;
+   display:block;
+}
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: red;
+  font-family: inherit;
+  margin: 0;
+}
+.copyright{
+    margin-left:80px;
+}
+.footer{
+	background-color:powderblue;
+	padding-top:40px;
+	padding-bottom:40px;
+}
+.icons a{                                             /*for changing color of icon*/         
+color:blue;
+}

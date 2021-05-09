@@ -1,0 +1,446 @@
+@media only screen and (max-width :1300px) {
+	.ordersitmes{
+margin-right: -33px;	
+}}
+@media only screen and (max-width :1025px) {
+.home{                                                           /*it is used in header to left side on header*/
+padding-top:19px;
+float:left;
+font-size:22px;
+}	 
+.listplace{                                               /*it is the list in header*/
+font-size: 20px;
+margin-right:1%;
+margin-left:5%;
+}
+.header{
+	margin-bottom:0px;
+}
+.ordersitmes a {
+    font-size: 18px;
+}
+.ordersitmes li{                                    /*it is for main menu li */
+float:left;
+position:relative;
+list-style-type:none;
+border: 2px solid black;
+background-color:green;
+width: 100%;
+padding:1rem;
+max-width:15%;
+border-radius: 0%;
+text-align: center;
+display:block;
+}
+.ordersitmes{
+	margin-bottom:-16px;
+	margin-right: -309px;
+}
+.sell{                                                               /*it is used for sub menu to adjust the button from right and bottom */
+right: -3.95%;
+bottom: 62px;
+}
+.sells{                                                               /*it is used for sub menu to adjust the button from right and bottom */
+right: -4.60%;
+bottom: 62px;
+}
+input[type=text], input[type=password] {                    /*it is used for input text in the headers section welcome then inputfield*/   
+  width: 100%;
+  max-width:95px;
+} 
+.fa-2x {                                                                                  
+    margin-left:10px;
+}	
+.list-item {
+    padding-bottom: 31px;
+    margin-right: 92px;
+}
+.content-page{
+	padding:100px 0;
+}
+.footer{
+padding: 20px  0;
+}		
+.hamburger{
+	display:none
+}
+}  
+@media only screen and (max-width :900px) {	   
+.fa-2x {
+font-size:1.8em;
+    margin-left: 14px;
+	margin-bottom:15px;
+}
+.content-page span {
+    font-size: 25px;
+	text-align:center;
+	margin-right: 22px;
+}
+.ordersitmes{
+margin-right: -152px;
+margin-left:0px;
+}
+.ordersitmes a {
+    padding: 25px 8px;
+}
+.opt{
+font-size:20px;
+text-align:center;
+}
+.copyright{
+text-align:center;
+display:block;
+margin:0;
+}
+.company {
+	text-align:center;
+display:block;
+margin:0;
+margin-bottom: 61px;
+}
+.home{                                                           /*it is used in header to left side on header*/
+padding-top:19px;
+float:left;
+font-size:18px;
+}	 
+.listplace{                                               /*it is the list in header*/
+font-size: 18px;
+margin-right: 1%;
+margin-left: 6%;
+}
+input[type=text], input[type=password] {                    /*it is used for input text in the headers section welcome then inputfield*/   
+  width: 100%;
+  max-width:95px;
+}
+.icons{
+	float: none;
+text-align:center;
+   margin: 0px;
+   display:block;
+}  
+ul li ul {
+    min-width: 45rem;
+	left: -36px;
+}   
+.sell{                                                               /*it is used for sub menu to adjust the button from right and bottom */
+right: -5%;
+    bottom: 89px;
+}
+.sells{                                                               /*it is used for sub menu to adjust the button from right and bottom */
+right: -11%;
+bottom: 89px;
+} 
+.dropdown li ul {
+    min-width: 44rem;
+    margin-top: 33px;
+    left: 85px;
+}
+.dropdown-container li ul {
+	min-width: 45rem;
+	margin-top: 1.9rem;
+    left: 64px;
+}
+.hamburger{
+	display:none
+}
+.hamburger .fa{
+font-size:65px;
+}
+}	
+@media only screen and (max-width :785px) {	
+.ordersitmes{
+	width:100%;
+	max-width:85%;
+	display:none;
+background: linear-gradient(to right top, #883a7d, #8a2792, #8313ab, #6c04c9, #2512eb);
+	
+}
+.contentorders{                                                    /*used for to make heading bottom 120px*/
+margin-bottom:120px;
+}
+.listplace a{
+	float:none;
+	margin-right: -275px;
+}
+.hamburger{
+	display:block !important;
+}
+.list-itemplace{                                               
+display:flex;
+flex-direction:column;
+padding: 0px 15px;
+text-align:center;
+font-size: 15px;
+margin:0px;
+}
+.ordersitmes li {
+    margin-left:0px;
+}
+.listplace{
+    margin-right: -6%;
+    margin-left: -11%;
+	font-size:20px;
+}
+.home{                                                           /*it is used in header to left side on header*/
+padding-top: 50px;
+    float: left;
+    font-size: 22px;
+    margin-left: -87px;
+}
+.contentorders{
+	margin-top:64px;
+	position:static;
+}
+.ordersitmes li {
+    margin-left: -16px;
+}
+ .log{
+width:22%;
+ font-size:25px;
+ }
+ .option{
+	font-size:25px;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+ .btn-login{  
+     width:32%;                                                                                             
+	font-size:25px;
+}
+.ordersitmes a {
+    font-size: 18px;
+	color:white;
+}
+.list-item a {
+
+    margin-left: -31px;
+    color: black;
+
+}
+.order input {
+margin-left:15%;
+}
+.ordersitmes li {
+	float:none;
+	border:none;
+	display:flex;
+    background-color:transparent;
+	flex-direction:column;
+	justify-content:center;
+	border-radius:0px;
+	margin-top:0px;
+	max-width:81%;
+	position:static;
+}
+.hamburger{
+	position:static;
+	left: 18px;
+    top:161px;
+	display:block;
+}
+.sell{                                                               /*it is used for sub menu to adjust the button from right and bottom */
+right: -10%;
+bottom: 69px;
+}
+.sells{                                                               /*it is used for sub menu to adjust the button from right and bottom */
+right:-13%;
+bottom: 71px;
+}
+h1{
+	font-size:30px;
+	padding:10px;
+	margin:0px;
+}
+.listplace input{
+	margin:0;
+}
+.ordersitmes{
+    text-align: center;
+    margin-right:0px;
+	display:none;
+	margin-bottom:0;
+}
+.ordersitmes a{
+	padding:10px 0px 10px 20px;
+	display:block;
+	letter-spacing:1px;
+}
+.list-item {                                          /*list in the footer*/    
+	display:flex;
+	flex-direction:column;
+	text-align:center;
+	 margin:0px;
+}
+.add-buying{
+	padding-bottom:160px;
+}
+.list-item  li{
+	padding-bottom:10px;
+}
+.company {
+	margin-bottom:25px;
+}
+ul li ul {
+    visibility: hidden;                                      /*it is used here because when we click or hover then show the list otherwise not */
+  opacity: 0;
+  min-width:60rem;
+    position:static;
+  transition: all 0.5s ease;            
+  margin-top:18px;
+    left:13px;
+  display: none;
+}
+.clearfix::after {                /*it is used beacause with float property we have to use clearfix property */
+  content: "";
+  clear: both;
+  display: table;
+}
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;                            /*it is used for to display the list */
+}
+.hamburger {
+    top: 107px;
+}
+ul li ul li {
+    clear: both;
+  width: 100%;
+}
+.dropdown li ul {
+    min-width: 44rem;
+    margin-top: 33px;
+    left: 85px;
+}
+.dropdown-container li ul {
+	min-width: 20rem;
+	margin-top: 0.9rem;
+    left:0px;
+}
+.ordersitmes ul ul{
+	display:none;
+}
+ul li ul{
+	min-width: 35rem;
+}
+.dropdown li a {                                   /*it is used for menu list*/    
+  color:white;
+}
+
+.dropdown-container a{                             /*it is used for sub-menu wrapper*/
+color:white;
+}
+.dropdown-container li ul{
+	position:static;
+}
+.dropdown li ul {
+    min-width: 44rem;
+    margin-top: 33px;
+    left:0px;
+}
+.drop1 li:hover{
+ background-color:transparent;
+    cursor: pointer;
+	float:none;
+	text-align:center;
+}
+.dropdown li:hover {                                       
+    background-color:transparent;
+    cursor: pointer;
+	color:white;
+	text-align : center;
+	float:none;
+}
+.dropdown a:hover{
+color:white;
+}
+.dropdown-container li:hover{                                   
+ background-color:transparent;
+    cursor: pointer;
+	color:white;
+}
+.dropdown-container a:hover{
+color:white;
+}
+.drop1 li:hover{
+ background-color:transparent;
+    cursor: pointer;
+	float:none;
+	text-align:center;
+}
+.dropdown-container li a{
+color:white;
+}                                                           /*it is used for sub menu to adjust the button from right and bottom */
+.sell {
+    right: 10%;
+    bottom: 26px;
+}
+ul li ul {
+    min-width: 25rem;
+}
+.profile{
+	border:2px solid red;
+}
+.sells{                                                               /*it is used for sub menu to adjust the button from right and bottom */
+right:15%;
+bottom:27px;
+}
+.dropdown-container li a{
+color:white;
+}
+}
+@media only screen and (max-width :500px) {	
+.listplace a{
+   margin-right:0px;
+}
+h1 {
+    float:none;
+    background-color:powderblue;
+    text-align: center;
+
+}
+.hamburger {
+    top: 157px;
+}
+.ordersitmes li{
+	margin-left:0;
+	margin-right:0;
+}
+.home {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+	padding:0;
+	margin-left:0px;
+}
+ul li ul {
+
+    min-width: 19rem;
+}
+.listplace input {
+
+    margin: 0;
+
+}
+input[type="text"], input[type="password"] {
+
+    width: 100%;
+    max-width: 0px;
+
+}
+.ordersitmes li {
+    margin-left: -16px;
+}
+.dropdown-container li ul {
+	min-width:8rem;
+	margin-top: 0.9rem;
+    left:0px;
+}
+.contentorders{                                                    /*used for to make heading bottom 120px*/
+margin-bottom:120px;
+}
+.hamburger .fa{
+font-size:65px;
+}}

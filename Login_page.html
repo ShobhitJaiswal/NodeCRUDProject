@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<link rel="stylesheet"  href="/style.css"> 
+<link rel="stylesheet"  href="/responsive.css">   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   
+<body> 
+
+<div class="login-form"  >
+    <div class="container">
+	<h4>User Login</h4>
+	<form action="auth" method="POST" id="theform" class="formlogin">
+    <form  method="POST" class="formlogin" id="theform" action="Login_page">
+      <label for="uname"><b>Email/Mobile</b></label>
+      <input type="text" placeholder="Enter email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+        
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+	    <a href=""><button type="submit" class="loginbtn">Sign In</button></a>
+  </form>
+</div>
+</div>
+<div class="footer">
+<div class="icons-wrapper">
+<ul class="list-item">
+<li><a href="#">About Us</a></li>
+<li><a href="#">Advertise With US</a></li>
+<li><a href="#">Terms and Conditions</a></li>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="company-wrapper clearfix">
+<div class="company">Powered By PMSL Pvt Ltd</div>
+<div class="icons clearfix">
+<a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+<a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+<a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+<a href="#"><i class="fa fa-youtube fa-2x"></i></a>
+</div>
+</div>
+<span class="copyright">Copyright &copy 2019 All Reserved Rights</span>
+</div>
+<style>
+.formlogin input[type=text], input[type=password] {                                  
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  max-width:92%;
+  background: #f1f1f1;
+}
+h3{
+font-size:51px;
+text-align:center;
+}
+h4{
+font-size: 32px;
+margin-left:30%;
+}
+form{
+width:100%;
+max-width:40%;
+margin:0 auto;
+margin-bottom:40px;
+}
+span.psw {
+  float: right;
+}
+.loginform{
+padding-bottom:106px;
+}
+.loginbtn {
+     background-color: #4CAF50;
+    color: white;
+    padding: 8px 20px;
+    margin: 8px 41%;
+    border: none;
+    cursor: pointer;
+	border:1px solid black;
+    width: 20%;
+    font-size: 20px;
+}
+@media only screen and (max-width :1024px) {
+h4{
+font-size: 30px
+}
+h3{
+font-size:35px;
+}
+.loginbtn {
+    width:40%;
+}}
+@media only screen and (max-width :900px) {
+h3{
+font-size:40px;
+}
+h4{
+font-size: 30px
+}
+.loginbtn {
+    width:40%;
+}}
+@media only screen and (max-width :500px) {
+h3{
+font-size:40px;
+}
+h4{
+font-size: 30px
+}
+.loginbtn {
+    width:79%;
+	margin: 8px 16%;
+}
+input[type=checkbox] {
+	margin-left:23px;
+}}
+</style>
+
+</head>
+</body>
+</html>

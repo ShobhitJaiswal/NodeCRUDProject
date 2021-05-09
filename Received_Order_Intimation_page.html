@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet"  href="/style.css">   
+<link rel="stylesheet"  href="/responsive.css"> 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+<body>
+<h1>TELEX</h1>
+<div class="header">
+<li class="home"><a href="main"><b>Home</b></a></li>
+<div class="container clearfix">
+ <ul class="list-itemplace clearfix">
+<li class="listplace"><label for="name"><b>Welcome Neha</b></label>
+    <input type="text"name="nme" required></li>
+<li class="listplace"><a href="#">Logout</a></li>
+<li class="listplace"><a href="#">Change Password</a></li>
+</ul>
+ </div>
+ </div>
+ <div class="contentorders">
+ <div class="container">
+  <div class="hamburger">
+  <i class='fa fa-times show_cross'></i>
+  <i class='fa fa-bars show_bars'></i>
+  </div>
+  <div class="wrapper">
+ <nav class="ordersitmes">
+ <ul class="menu">
+ <li class="order"><a href="Order">Place An Order</a></li>
+
+<li class="order-manage"><a href="#">Manage Orders</a>
+ <ul class="dropdown-container">
+        <li><a href="">Order Intimation</a>
+				<ul class="drop1">
+		<li class="sells"><a href="Received_Order_Intimation">Received Order</a></li>
+		 <li class="sells"><a href="Placed_Order_Intimation">Placed Order</a></li>
+      </ul>
+	  </li>
+        <li><a href="#">Order History</a>
+			<ul class="drop1">
+		<li class="sells"><a href="Received_Order_History">Received Order History</a></li>
+		 <li class="sells"><a href="Placed_Order_History">Placed Order History</a></li>
+      </ul>
+	  </li>
+		 <li><a href="Order">Place an Order</a></li>
+        <li><a href="Edit_Order">Modify an Order</a></li>
+		 <li><a href="Delete_Order">Delete an Order</a></li>
+      </ul>
+</li>
+<li class="order-manage"><a href="">Manage Product</a>
+ <ul class="dropdown-container">
+        <li><a href="#">Selling Products</a>
+		<ul class="drop1">
+		 <li class="sell"><a href="Add_Selling_Product">ADD</a></li>
+		 <li class="sell"><a href="Delete_Selling_Product">DELETE</a></li>
+		</ul>
+		</li>
+        <li><a href="#">Buying  Products</a>
+		<ul class="drop1">
+		<li class="sell"><a href="Add_Buying_Product">ADD</a></li>
+		 <li class="sell"><a href="Delete_Buying_Product_page">DELETE</a></li>
+      </ul>
+</li>
+</ul>
+</li>
+<li class="order">
+<a href="Manange_User">Manage Profile</a></li>
+ </ul>
+ </nav>
+ </div>
+ </div>
+ </div>
+ <div class="container">
+ <div class="order">
+ <h2>Received Order Intimation</h2>
+  <div class="sort clearfix">
+ <span class="By"><b>Sort By:</b></span> <select></select>
+ </div>
+ <label>
+  <input type="text" placeholder="Search by Product Id or Product Name">
+  </label>
+ </div>
+ <div class="tablegroup">
+ <table>
+  <tr>
+    <th>Date On <br>
+	Order Placed</th>
+    <th>Order Type</th> 
+    <th>Category</th>
+	<th>Product</th>
+    <th>Quantity</th> 
+    <th>Price</th>
+	<th>User Placed<br>
+	Order</th>
+	 <th>Order Id</th>
+  </tr>
+</table>
+ </div>
+ </div>
+  <div class="footer">
+<div class="icons-wrapper">
+<ul class="list-item">
+<li><a href="#">About Us</a></li>
+<li><a href="#">Advertise With US</a></li>
+<li><a href="#">Terms and Conditions</a></li>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="company-wrapper clearfix">
+<div class="company">Powered By NextLay Solutions Pvt Ltd</div>
+<div class="icons clearfix">
+<a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+<a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+<a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+<a href="#"><i class="fa fa-youtube fa-2x"></i></a>
+</div>
+</div>
+<span class="copyright">Copyright &copy 2019 All Reserved Rights</span>
+</div>
+<style>
+table{
+width:100%;
+}
+h2{
+font-size: 32px;
+text-align:center;
+margin-bottom:80px;
+margin-left: -72px;
+}
+
+table, th, td {                                                                /*it is used table, table heading, table row*/                
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: #f4270b
+}
+.tablegroup {                                                          /*it is used for table wrapper*/
+    width: 100%;
+    max-width:70%;
+    margin: 0 auto;
+    min-height: 250px;
+    border: 1px solid black;
+    margin-bottom:150px;
+	overflow:scroll;
+	}
+.order input{                                                       /*it is used for input in order*/
+    margin: 0 auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+    width: 289px;
+    margin-left: 37%;
+    padding: 13px;
+    margin-bottom: 28px;
+	border:1px solid black;
+	max-width:50%;
+	background-color: #f1f1f1;
+}
+.sort{                                                                  /*it is used for search by */
+float: right;
+margin-right: 15%;
+margin-top: -28px;
+width: 100%;
+max-width: 100px;
+}
+.sort input{                                                         /*it is used for search by input */
+padding:12px;
+}
+select{
+width:100%;
+margin:0 auto;
+margin:12px 0;
+padding:12px;
+background-color: #f1f1f1;
+border:1px solid black;
+}
+.forms{                                                                          /*to make form in center with width*/
+width:100%;
+margin:0 auto;
+max-width:300px;
+}
+.ordersitmes{
+margin-top:120px;
+}
+@media only screen and (max-width :900px) {
+.order input {
+margin-left:15%;
+max-width:38%;
+margin-left:10px;
+}
+.ordersitmes{
+margin-top:0px;
+}
+.contentorders{
+margin-bottom:250px;
+}
+}
+@media only screen and (max-width :500px) {
+.order{
+display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+select{
+margin-right:-219px;
+}
+.By{
+margin-left:19px;
+}
+h2{
+font-size:23px;
+text-align:center;
+margin-left:0px;
+}
+.tablegroup{
+margin-left:10px;
+max-width:89%;
+}
+.sort{
+float:none;
+}}
+</style>
+ <script src="/menu.js"></script> 
+</head>
+</body>
+</html>
